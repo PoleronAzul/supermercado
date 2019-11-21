@@ -1,0 +1,1 @@
+dentro de esta carpeta creada por jacob nuñez, se deberan cargar todas las vistas hechas en ccs para las vistas en HTML
