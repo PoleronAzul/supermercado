@@ -9,7 +9,6 @@ class Genero(models.Model):
 class Ciudad(models.Model):
     nombre = models.CharField(max_length=45,null=False,blank=False)
 
-
 class Comuna(models.Model):
     nombre = models.CharField(max_length=50, blank=False,null=False)
 
