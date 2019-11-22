@@ -1,4 +1,6 @@
 #creado por jacob nuñez
+#modificacion de stock y precio por error en inicio de la base de datos revisar por jacob nuñez
+# Error modificado por jacob nuñez 
 from django.db import models
 
 # Create your models here.
@@ -24,8 +26,8 @@ class Persona(models.Model):
 class Producto(models.Model):
     nombre = models.CharField(max_length=30,null=False,blank=False)
     descripcion = models.TextField(max_length=500,null=False,blank=False)
-    stock = models.CharField(max_length=30,null=False,blank=False)
-    precio = models.CharField(max_length=30,null=False,blank=False)
+    stock = models.PositiveSmallIntegerField()
+    precio = models.IntegerField()
 
 class Boleta(models.Model):
     fecha = models.DateTimeField(auto_now=True)
