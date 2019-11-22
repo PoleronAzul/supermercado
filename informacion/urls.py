@@ -1,7 +1,11 @@
-#creado por jacob
 from django.urls import path
 from . import views
 
+#creado por jacob
+
+app_name = 'informacion'
+
 urlpatterns = [
-    path('',views.inicio,name='index'),
+    path('inicio/', views.inicio,name='inicio'),
+    path('loginCliente/', views.loginCliente,name='login'),
 ]

@@ -16,8 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from informacion.urls import path
+from informacion import views as vistaInformacion
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('informacion.urls'))
+    path('', vistaInformacion.inicio,name='inicio'),
+    path('loginCliente/', vistaInformacion.loginCliente,name='login'),
 ]
+ 
