@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>formulario</title>
+</head>
+<body>
+<div class="container" id="modificarDatosUsuario">
+    <div  class="col-sm-12">
+        <h1 class="h4 text-center" >Buscar o Listar Usuario</h1>
+        <form action="" onsubmit="DatosUsuario(event,this)">
+            <div class="form-group text-center">
+                <label for="">Ingrese nombre del Usuario</label>
+                <input type="text" name="nombreModificarUsuarios" class="form-control">
+            </div>
+            <div class="container" >
+                <button class="btn btn-warning center">
+                    Buscar
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="container" id="listarUsuarios">
+            <div class="col-sm-12">
+                <h1 class="h4 text-center">Lista</h1>
+                <label for="">¿O prefieres listarlos?</label>
+                <table class="table table-striped" id="TablaUsuarios">
+                    <thead>
+                        <tr>
+                            <th>Nombre Usuario</th>
+                            <th>Apellido</th>
+                            <th>Run</th>
+                            <th>Genero</th>
+                            <th>Contraseña</th>
+                            <th>email</th>
+                            <th>Direccion</th>
+                            <th>Telefono</th>
+                            <th>Ciudad</th>
+                            <th>Comuna</th>
+                        </tr>
+                    </thead>
+                </table>
+                <button class="btn btn-success center" onsubmit="DatosUsuarios(event,this)">
+                    Listar
+                </button>
+</div>
+<script src="crud.js"></script>
+</body>
+
+<footer>
+        <a href="administrador.html" class="btn btn-danger">volver al inicio</a>
+</footer>

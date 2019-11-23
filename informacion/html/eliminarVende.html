@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>formulario</title>
+</head>
+<body>
+<div class="Container" id="eliminarVendedor">
+        <div class="col-sm-12">
+            <h1 class="h4 text-center" >Eliminar</h1>
+            <form action="" onsubmit="EliminarVendedor(event,this)">
+                <div class="form-group">
+                    <label for="">Nombre del Vendedor</label>
+                    <input type="text" name="nombreaEliminar" class="form-control">
+                </div>
+                <button class="btn btn-danger">
+                    Eliminar
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="crud.js"></script>
+</body>
+<footer>
+    <a href="administrador.html" class="btn btn-warning">volver al inicio</a>
+</footer>

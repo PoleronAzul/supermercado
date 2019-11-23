@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Agregar -->
+        <div class="row esconder" id="agregar">
+            <div class="col-sm-12">
+                <h1 class="h4 text-center">Agregar Usuario</h1>
+                <form action="" onsubmit="agregarDatosUsuario(event,this)">
+                    <div class="form-group">
+                        <label for="">Nombre del Usuario</label>
+                        <input required name="NUsuario" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Apellido</label>
+                        <input required name="ApeUsuario" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Run -sin puntos-</label>
+                        <input required name="RunUsuario" type="text" maxlength="10" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Genero -ingresar solo M o F-</label>
+                        <input required name="GUsuario" type="text" maxlength="1" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">contrasena</label>
+                        <input required name="ContraUsuario" type="text" minlength="6" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input required name="EmailUsuario" type="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Direccion</label>
+                        <input required name="DUsuario" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Telefono</label>
+                        <input required name="TelefonoUsuario" type="number" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Ciudad</label>
+                        <input required name="CiudadUsuario" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Comuna</label>
+                        <input required name="ComunaUsuario" type="text" class="form-control">
+                    </div>
+                    <button class="btn btn-success">Guardar</button>
+                    <input type="button" class="btn btn-danger" onclick="history.back()" name="volver atrás" value="volver atrás">
+                </form>
+
+            </div>
+        </div>
+        <script src="crud.js"></script>
+</body>
+</html>
