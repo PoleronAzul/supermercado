@@ -1,0 +1,77 @@
+<!--codigo Francisco.--> 
+<!--modificado por jacob: modificacion de genero y ciudad.--> 
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Agregar. -->
+        <div class="row" id="agregarVendedor">
+            <div class="col-sm-12">
+                <h1 class="h4 text-center">Agregar</h1>
+                <form action="" onsubmit="agregarDatosVendedor(event,this)">
+                    <div class="form-group">
+                        <label for="">Nombre del Vendedor</label>
+                        <input required name="NVendedor" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Apellido</label>
+                        <input required name="ApeVende" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Run</label>
+                        <input required name="RunVende" type="text" maxlength="10" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Genero</label> <br>
+                        <input type="radio" name="transporte" value="1">Masculino 
+                        <input type="radio" name="transporte" value="2">Femenino
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="">contraseña</label>
+                        <input required name="ContraVende" type="text" minlength="6" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input required name="EmailVende" type="Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Direccion</label>
+                        <input required name="DVende" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Telefono</label>
+                        <input required name="TelefonoVende" type="number" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Ciudad</label>
+                        <select name="Ciudad" >
+                            
+                            <option>Santiago</option>
+                            
+                            <option>Valparaiso</option>
+                            
+                            <option>Coquimbo</option>
+                            
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Comuna</label>
+                        <input required name="ComunaVende" type="text" class="form-control">
+                    </div>
+                    <button class="btn btn-success">Guardar</button>
+                    <a href="administrador.html" class="btn btn-danger">volver al inicio</a>
+                </form>
+
+            </div>
+        </div>
+        <script src="crud.js"></script>
+    </body>
+</html>
